@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>T5-Cream</title>
+    <!-- <script src="https://kit.fontawesome.com/652dde0e4d.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script> -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        
+        <div class="navbar">
+            <span>LOGO</span>
+        
+            <ul class="nav-items">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="aboutUS.html">About Us</a></li>
+                <li><a href="form.html">Contact us</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="line"></span>
+                <span class="line"></span>
+                <span class="line"></span>
+            </div>
+        </div>
+        <div class="show">
+            <!-- <i class="fa-solid fa-bars"></i> -->
+            <i class="fas fa-bars"></i>
+        </div>
+        
+       
+        <div class="hidden-container">
+            <ul class="hidden-list">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="aboutUS.html">About Us</a></li>
+                <li><a href="form.html">Contact us</a></li>
+            </ul>
+        </div>
+    </header>
+    <section>
+        <div class="blink">
+            <p>"TOP 5" ESSENCIAL BODY CREAM TO GLOW AND PROTECT YOUR BODY</p>
+        </div>
+        
+    <div class="box">
+        <div class="form">
+            <h2>Sign in</h2>
+            <div class="inputBox">
+                <input type="text" required="required">
+                <span> Username</span>
+                <i></i>
+            </div>
+            <div class="inputBox">
+                <input type="password" required="required">
+                <span> password</span>
+                <i></i>
+            </div>      
+            <div class="links">
+                <a href="#">Forgot Password?</a>
+                <a href="#">Signup</a>
+            </div>
+            <input type="submit" value="Login">
+            
+        </div>
+    </div>
+    <div>
+        <img src="img1.jpg" alt="">
+       </div>
+
+    </section>
+       
+                
+     <footer>
+
+     </footer>  
+     
+     <script>
+        const hamburger = document.querySelector('.hamburger');
+        const navbar = document.querySelector('ul')
+        hamburger.addEventListener('click', () =>{
+            navbar.classList.toggle('slide');
+        });
+        // $(document).ready(function(){
+        //     $(".show").on("click", function(event) {
+        //         $(".hidden-list").toggle();
+        //         event.stopPropagation();
+        //     });
+    
+        //     $(document).on("click", function(event){
+        //         if (!$(event.target).closest('.show').length && !$(event.target).hasClass('hidden-list')){
+        //             $(".hidden-list").hide();
+        //         }
+        //     });
+        // });
+//         $(document).ready(function(){
+//     $(".show").on("click", function(event) {
+//         $(".hidden-list").toggleClass("show-menu");
+//         event.stopPropagation();
+//     });
+
+//     $(document).on("click", function(event){
+//         if (!$(event.target).closest('.show').length && !$(event.target).hasClass('hidden-list')){
+//             $(".hidden-list").removeClass("show-menu");
+//         }
+//     });
+// });
+
+    </script>
+    
+</body>
+</html>
